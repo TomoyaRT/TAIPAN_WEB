@@ -99,11 +99,13 @@ function ListBox() {
 export const Footer = () => {
   return (
     <>
-      <div className="mx-auto w-[100%]">
-        <div className="w-[80%] mx-auto flex flex-col-reverse min-[1150px]:flex-row justify-between items-center">
-          <div className="flex-col">
-            <div className="text-[30px] mt-0 pt-0 font-medium">TAIPAN</div>
-            <div className="flex justify-between items-center w-[250px]">
+      <div className="mx-auto w-[100%] custom_footer">
+        <div className="w-[80%] mx-auto flex flex-col-reverse footer_layout justify-between items-center">
+          <div className="flex-col left_side">
+            <div className="text-[30px] mt-0 pt-0 font-medium left_side_title">
+              TAIPAN
+            </div>
+            <div className="flex justify-between items-center w-[250px] left_side_flag">
               <Image
                 alt="Mountains"
                 className="opacity-100 border  border-solid	border-gray-400 shadow-lg"
@@ -120,7 +122,7 @@ export const Footer = () => {
               />
             </div>
 
-            <div className="w-[200px] flex justify-between items-center ">
+            <div className="w-[200px] flex justify-between items-center left_side_social">
               <Button isIconOnly aria-label="Like" variant="light">
                 <FaFacebookSquare
                   className="text-[30px]"
@@ -146,7 +148,7 @@ export const Footer = () => {
               <Link href="#">隱私權政策</Link>
             </div>
           </div>
-          <div>
+          <div className="right_side">
             <ListBox />
           </div>
         </div>
