@@ -12,7 +12,7 @@ import "@/components/styles.css";
 import { FaQuestionCircle } from "react-icons/fa";
 import Lottie from "react-lottie-player";
 
-import TestAnimation from "@/lottie/Test.json";
+import PuzzleAnimation from "@/lottie/Puzzle.json";
 
 const CardListStyles =
   "grid grid-cols-1 gap-4 min-[500px]:grid-cols-2 tablet-md:grid-cols-3 desktop-md:grid-cols-3";
@@ -104,7 +104,7 @@ export default function App() {
                 <Lottie
                   loop
                   play
-                  animationData={TestAnimation}
+                  animationData={PuzzleAnimation}
                   style={{ width: "100%", height: "100%" }}
                 />
               </div>
