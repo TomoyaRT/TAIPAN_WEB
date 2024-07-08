@@ -1,0 +1,28 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[css]": {
+    "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+  },
+  "todo-tree.general.tags": ["NOTE", "TODO", "FIXME"],
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "background": "green",
+      "foreground": "white"
+    },
+    "NOTE": {
+      "background": "blue",
+      "foreground": "white",
+      "color": "white"
+    },
+    "FIXME": {
+      "background": "red",
+      "foreground": "white",
+      "gutterIcon": true
+    }
+  }
+}
