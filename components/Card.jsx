@@ -7,8 +7,9 @@ import { Chip } from "@nextui-org/chip";
 import { Avatar } from "@nextui-org/avatar";
 import { IoPerson } from "react-icons/io5";
 import Tilt from "react-parallax-tilt";
+import PropTypes from "prop-types";
 
-export const CardComponent = () => {
+export const CardComponent = ({ date, title, image, tag }) => {
   return (
     <>
       <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
@@ -25,24 +26,20 @@ export const CardComponent = () => {
               }}
             >
               <Image
-                alt="Mountains"
-                src="/04.jpg"
-                layout="fill"
-                // style={{ objectFit: "contain" }}
+                alt="Image"
                 className="rounded-xl opacity-100"
+                layout="fill"
+                src={image}
               />
             </div>
           </CardBody>
           <div className="mt-6">
             <div>
               <Chip color="default" variant="flat">
-                イベント
+                {tag}
               </Chip>
             </div>
-            <div className="font-bold text-large mt-3 mb-4">
-              クリスマスパーティーを開催しました開催【日本東京】言語【日本
-              ・繁体中国】
-            </div>
+            <div className="font-bold text-large mt-3 mb-4">{title}</div>
             <div className="flex items-center justify-between w-full ">
               <div className="flex items-center justify-between w-[90px]">
                 <Avatar
@@ -52,11 +49,18 @@ export const CardComponent = () => {
                 />
                 <p className="text-[#97989F]">TAIPAN</p>
               </div>
-              <small className="text-[#97989F]">2023年12月27日</small>
+              <small className="text-[#97989F]">{date}</small>
             </div>
           </div>
         </Card>
       </Tilt>
     </>
   );
+};
+
+CardComponent.propTypes = {
+  date: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
 };

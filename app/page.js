@@ -39,6 +39,110 @@ const SectionWrapper = (childrenElement) => (
   </div>
 );
 
+const fakeEventDataList = [
+  // {
+  //   date: "2024年4月23日",
+  //   tag: "イベント",
+  //   title: "Project: Ligaya 幸福企劃「Globe」X「社会貢献」",
+  //   image: "/event/01.jpg",
+  // },
+  // {
+  //   date: "2024年1月20日",
+  //   tag: "イベント",
+  //   title: "開催【日本大阪】言語【繁体中国語】青商逗陣來作伙~日總青商來圍爐",
+  //   image: "/event/02.png",
+  // },
+  // {
+  //   date: "2023年12月28日",
+  //   tag: "イベント",
+  //   title:
+  //     "【主催】日本中華連合総会青年部２０２４北海道合宿のご案内♪【後援】TAIPAN",
+  //   image: "/event/03.jpg",
+  // },
+  // {
+  //   date: "2023年12月28日",
+  //   tag: "イベント",
+  //   title:
+  //     "【主催】日本中華連合総会青年部２０２４北海道合宿のご案内♪【後援】TAIPAN",
+  //   image: "/event/03.jpg",
+  // },
+  {
+    date: "2023年12月19日",
+    tag: "イベント",
+    title: "TAIPAN クリスマスパーティーのご案内",
+    image: "/event/04.jpg",
+  },
+  {
+    date: "2023年12月19日",
+    tag: "イベント",
+    title: "TAIPAN クリスマスパーティーのご案内",
+    image: "/event/04.jpg",
+  },
+  {
+    date: "2023年12月19日",
+    tag: "イベント",
+    title: "TAIPAN クリスマスパーティーのご案内",
+    image: "/event/04.jpg",
+  },
+  {
+    date: "2023年12月19日",
+    tag: "イベント",
+    title: "TAIPAN クリスマスパーティーのご案内",
+    image: "/event/04.jpg",
+  },
+  {
+    date: "2023年12月19日",
+    tag: "イベント",
+    title: "TAIPAN クリスマスパーティーのご案内",
+    image: "/event/04.jpg",
+  },
+  {
+    date: "2023年12月19日",
+    tag: "イベント",
+    title: "TAIPAN クリスマスパーティーのご案内",
+    image: "/event/04.jpg",
+  },
+];
+
+const fakeTrajectoryDataList = [
+  {
+    date: "2023年12月19日",
+    tag: "イベント",
+    title: "TAIPAN クリスマスパーティーのご案内",
+    image: "/12.jpg",
+  },
+  {
+    date: "2023年12月19日",
+    tag: "イベント",
+    title: "TAIPAN クリスマスパーティーのご案内",
+    image: "/12.jpg",
+  },
+  {
+    date: "2023年12月19日",
+    tag: "イベント",
+    title: "TAIPAN クリスマスパーティーのご案内",
+    image: "/12.jpg",
+  },
+  {
+    date: "2023年12月19日",
+    tag: "イベント",
+    title: "TAIPAN クリスマスパーティーのご案内",
+    image: "/12.jpg",
+  },
+  {
+    date: "2023年12月19日",
+    tag: "イベント",
+    title: "TAIPAN クリスマスパーティーのご案内",
+    image: "/12.jpg",
+  },
+  {
+    date: "2023年12月19日",
+    tag: "イベント",
+    title: "TAIPAN クリスマスパーティーのご案内",
+    image: "/12.jpg",
+  },
+];
+
 export default function App() {
   return (
     <>
@@ -140,22 +244,28 @@ export default function App() {
         <>
           {SectionTitle("軌跡")}
           <div className={CardListStyles}>
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
+            {fakeTrajectoryDataList.map((item, index) => (
+              <CardComponent
+                key={index}
+                date={item.date}
+                image={item.image}
+                tag={item.tag}
+                title={item.title}
+              />
+            ))}
           </div>
 
           {SectionTitle("活動")}
           <div className={CardListStyles}>
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
+            {fakeEventDataList.map((item, index) => (
+              <CardComponent
+                key={index}
+                date={item.date}
+                image={item.image}
+                tag={item.tag}
+                title={item.title}
+              />
+            ))}
           </div>
         </>
       )}
