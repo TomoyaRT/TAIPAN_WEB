@@ -144,8 +144,8 @@ export const Footer = () => {
             </div>
 
             <div className="flex justify-between items-center">
-              <Link href="#">服務條款</Link>
-              <Link href="#">隱私權政策</Link>
+              <Link href="#">サービス利用規約</Link>
+              <Link href="#">プライバシーポリシー</Link>
             </div>
           </div>
           <div className="right_side">

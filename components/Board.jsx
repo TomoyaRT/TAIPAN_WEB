@@ -65,9 +65,9 @@ export const Board = () => {
       selectionMode="single"
     >
       <TableHeader>
-        <TableColumn maxWidth={100}>日期</TableColumn>
-        <TableColumn minWidth={200}>分類</TableColumn>
-        <TableColumn minWidth={300}>名稱</TableColumn>
+        <TableColumn maxWidth={100}>日付</TableColumn>
+        <TableColumn minWidth={200}>カテゴリ</TableColumn>
+        <TableColumn minWidth={300}>タイトル</TableColumn>
       </TableHeader>
       <TableBody>
         {fakeBoardData.map((item) => (
