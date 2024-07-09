@@ -16,21 +16,21 @@ const fakeBoardData = [
   {
     key: 1,
     date: "2024年4月23日",
-    category: "活動",
+    category: "イベント",
     title:
       "Monthly Community Gathering [International Party] / マンスリー国際交流パーティー[国際交流パーティ]開催【日本 銀座】",
   },
   {
     key: 2,
     date: "2024年4月24日",
-    category: "活動",
+    category: "イベント",
     title:
       "Monthly Community Gathering [International Party] / マンスリー国際交流パーティー[国際交流パーティ]開催【日本 銀座】",
   },
   {
     key: 3,
     date: "2024年4月25日",
-    category: "活動",
+    category: "イベント",
     title:
       "Monthly Community Gathering [International Party] / マンスリー国際交流パーティー[国際交流パーティ]開催【日本 銀座】",
   },
@@ -38,14 +38,14 @@ const fakeBoardData = [
   {
     key: 4,
     date: "2024年4月26日",
-    category: "活動",
+    category: "イベント",
     title:
       "Monthly Community Gathering [International Party] / マンスリー国際交流パーティー[国際交流パーティ]開催【日本 銀座】",
   },
   {
     key: 5,
     date: "2024年4月27日",
-    category: "活動",
+    category: "イベント",
     title:
       "Monthly Community Gathering [International Party] / マンスリー国際交流パーティー[国際交流パーティ]開催【日本 銀座】",
   },

@@ -235,7 +235,7 @@ export default function App() {
             ))}
           </div>
 
-          {SectionTitle("活動")}
+          {SectionTitle("イベント")}
           <div className={CardListStyles}>
             {fakeEventDataList.map((item, index) => (
               <CardComponent
