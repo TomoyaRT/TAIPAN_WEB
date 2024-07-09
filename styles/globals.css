@@ -9,6 +9,18 @@
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .custom_footer {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .custom_footer {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 850px) {
     .custom_footer .right_side {
         width: 450px;

@@ -99,7 +99,7 @@ function ListBox() {
 export const Footer = () => {
   return (
     <>
-      <div className="mx-auto w-[100%] custom_footer">
+      <div className="mx-auto custom_footer">
         <div className="w-[80%] mx-auto flex flex-col-reverse footer_layout justify-between items-center">
           <div className="flex-col left_side">
             <div className="text-[30px] mt-0 pt-0 font-medium left_side_title">
@@ -143,7 +143,7 @@ export const Footer = () => {
               </Button>
             </div>
 
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col gap-2 mt-2 justify-between items-center">
               <Link href="#">サービス利用規約</Link>
               <Link href="#">プライバシーポリシー</Link>
             </div>

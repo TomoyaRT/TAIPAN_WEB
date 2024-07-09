@@ -65,23 +65,24 @@ export const Board = () => {
       selectionMode="single"
     >
       <TableHeader>
-        <TableColumn maxWidth={100}>日付</TableColumn>
+        <TableColumn className="hidden sm:flex" maxWidth={100}>
+          日付
+        </TableColumn>
         <TableColumn minWidth={200}>カテゴリ</TableColumn>
         <TableColumn minWidth={300}>タイトル</TableColumn>
       </TableHeader>
       <TableBody>
         {fakeBoardData.map((item) => (
           <TableRow key={item.key}>
-            <TableCell className="text-nowrap">{item.date}</TableCell>
+            <TableCell className="text-nowrap hidden sm:flex">
+              {item.date}
+            </TableCell>
             <TableCell className="cursor-pointer">
               <Chip color="default" variant="flat">
                 {item.category}
               </Chip>
             </TableCell>
-            <TableCell className="cursor-pointer">
-              {/* <div className="truncate  max-w-[300px]">{item.title}</div> */}
-              {item.title}
-            </TableCell>
+            <TableCell className="cursor-pointer">{item.title}</TableCell>
           </TableRow>
         ))}
       </TableBody>
