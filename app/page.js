@@ -40,106 +40,86 @@ const SectionWrapper = (childrenElement) => (
 );
 
 const fakeEventDataList = [
-  // {
-  //   date: "2024年4月23日",
-  //   tag: "イベント",
-  //   title: "Project: Ligaya 幸福企劃「Globe」X「社会貢献」",
-  //   image: "/event/01.jpg",
-  // },
-  // {
-  //   date: "2024年1月20日",
-  //   tag: "イベント",
-  //   title: "開催【日本大阪】言語【繁体中国語】青商逗陣來作伙~日總青商來圍爐",
-  //   image: "/event/02.png",
-  // },
-  // {
-  //   date: "2023年12月28日",
-  //   tag: "イベント",
-  //   title:
-  //     "【主催】日本中華連合総会青年部２０２４北海道合宿のご案内♪【後援】TAIPAN",
-  //   image: "/event/03.jpg",
-  // },
-  // {
-  //   date: "2023年12月28日",
-  //   tag: "イベント",
-  //   title:
-  //     "【主催】日本中華連合総会青年部２０２４北海道合宿のご案内♪【後援】TAIPAN",
-  //   image: "/event/03.jpg",
-  // },
   {
-    date: "2023年12月19日",
+    date: "2024年1月22日",
     tag: "イベント",
-    title: "TAIPAN クリスマスパーティーのご案内",
-    image: "/event/04.jpg",
+    title:
+      "クリスマスパーティーを開催しました開催【日本東京】言語【日本 ・繁体中国】",
+    image: "/event/01.jpg",
+  },
+  {
+    date: "2024年1月22日",
+    tag: "イベント",
+    title: "開催【日本大阪】言語【繁体中国語】青商逗陣來作伙~日總青商來圍爐",
+    image: "/event/02.jpg",
   },
   {
     date: "2023年12月19日",
     tag: "イベント",
     title: "TAIPAN クリスマスパーティーのご案内",
-    image: "/event/04.jpg",
+    image: "/event/03.jpg",
+  },
+  {
+    date: "2024年1月22日",
+    tag: "イベント",
+    title: "開催【日本大阪】言語【繁体中国語】青商逗陣來作伙~日總青商來圍爐",
+    image: "/event/02.jpg",
   },
   {
     date: "2023年12月19日",
     tag: "イベント",
     title: "TAIPAN クリスマスパーティーのご案内",
-    image: "/event/04.jpg",
+    image: "/event/03.jpg",
   },
   {
-    date: "2023年12月19日",
+    date: "2024年1月22日",
     tag: "イベント",
-    title: "TAIPAN クリスマスパーティーのご案内",
-    image: "/event/04.jpg",
-  },
-  {
-    date: "2023年12月19日",
-    tag: "イベント",
-    title: "TAIPAN クリスマスパーティーのご案内",
-    image: "/event/04.jpg",
-  },
-  {
-    date: "2023年12月19日",
-    tag: "イベント",
-    title: "TAIPAN クリスマスパーティーのご案内",
-    image: "/event/04.jpg",
+    title:
+      "クリスマスパーティーを開催しました開催【日本東京】言語【日本 ・繁体中国】",
+    image: "/event/01.jpg",
   },
 ];
 
 const fakeTrajectoryDataList = [
   {
-    date: "2023年12月19日",
-    tag: "イベント",
-    title: "TAIPAN クリスマスパーティーのご案内",
-    image: "/12.jpg",
+    date: "2023年10月21日",
+    tag: "軌跡",
+    title: "日本酒講座",
+    image: "/trajectory/01.jpg",
   },
   {
-    date: "2023年12月19日",
-    tag: "イベント",
-    title: "TAIPAN クリスマスパーティーのご案内",
-    image: "/12.jpg",
+    date: "2023年12月21日",
+    tag: "軌跡",
+    title:
+      "【台湾ニュース青年セミナー】日本の仕事とビジネスが熱心に語る・風の時代へ",
+    image: "/trajectory/02.jpg",
   },
   {
-    date: "2023年12月19日",
-    tag: "イベント",
-    title: "TAIPAN クリスマスパーティーのご案内",
-    image: "/12.jpg",
+    date: "2024年1月22日",
+    tag: "軌跡",
+    title:
+      "クリスマスパーティーを開催しました開催【日本東京】言語【日本 ・繁体中国】",
+    image: "/event/01.jpg",
   },
   {
-    date: "2023年12月19日",
-    tag: "イベント",
-    title: "TAIPAN クリスマスパーティーのご案内",
-    image: "/12.jpg",
+    date: "2023年12月21日",
+    tag: "軌跡",
+    title:
+      "【台湾ニュース青年セミナー】日本の仕事とビジネスが熱心に語る・風の時代へ",
+    image: "/trajectory/02.jpg",
   },
   {
-    date: "2023年12月19日",
-    tag: "イベント",
-    title: "TAIPAN クリスマスパーティーのご案内",
-    image: "/12.jpg",
+    date: "2024年1月22日",
+    tag: "軌跡",
+    title:
+      "クリスマスパーティーを開催しました開催【日本東京】言語【日本 ・繁体中国】",
+    image: "/event/01.jpg",
   },
   {
-    date: "2023年12月19日",
-    tag: "イベント",
-    title: "TAIPAN クリスマスパーティーのご案内",
-    image: "/12.jpg",
+    date: "2023年10月21日",
+    tag: "軌跡",
+    title: "日本酒講座",
+    image: "/trajectory/01.jpg",
   },
 ];
 
@@ -152,7 +132,7 @@ export default function App() {
 
       {SectionWrapper(
         <>
-          {SectionTitle("公告欄")}
+          {SectionTitle("掲示板")}
           <Board />
         </>
       )}

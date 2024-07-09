@@ -58,7 +58,7 @@ export const Board = () => {
       aria-label="Example static collection table"
       bottomContent={
         <div className="flex w-full justify-center">
-          <Button variant="flat">Load More</Button>
+          <Button variant="flat">続きを読む</Button>
         </div>
       }
       color={"primary"}

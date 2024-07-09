@@ -74,7 +74,7 @@ function ListBox() {
   return (
     <ListboxWrapper>
       <Listbox aria-label="Actions" onAction={(key) => alert(key)}>
-        <ListboxSection title="活動資訊">
+        <ListboxSection title="イベント情報">
           <ListboxItem key="new">
             ・Project: Ligaya 幸福企劃　「Globe」X「社会貢献」
           </ListboxItem>

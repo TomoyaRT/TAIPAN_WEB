@@ -17,15 +17,15 @@ import { Button } from "@nextui-org/button";
 const menuContent = [
   {
     id: 1,
-    text: "首頁",
+    text: "ホーム",
   },
   {
     id: 2,
-    text: "醫療地圖",
+    text: "医療マップ",
   },
   {
     id: 3,
-    text: "活動情報",
+    text: "イベント情報",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const menuContent = [
   },
   {
     id: 5,
-    text: "聯絡我們",
+    text: "お問い合わせ",
   },
 ];
 
@@ -78,7 +78,7 @@ export default function LayoutNavbar() {
         <NavbarContent justify="end">
           <NavbarItem>
             <Button as={Link} color="primary" href="#" variant="flat">
-              會員登入
+              ログイン
             </Button>
           </NavbarItem>
         </NavbarContent>
