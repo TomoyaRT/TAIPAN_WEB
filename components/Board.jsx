@@ -65,7 +65,7 @@ export const Board = () => {
       selectionMode="single"
     >
       <TableHeader>
-        <TableColumn className="hidden sm:flex" maxWidth={100}>
+        <TableColumn className="hidden sm:flex items-center" maxWidth={150}>
           日付
         </TableColumn>
         <TableColumn minWidth={200}>カテゴリ</TableColumn>
